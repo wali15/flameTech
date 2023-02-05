@@ -19,26 +19,19 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/courses">All Courses</Link>
-            </li>
-            <li>
               <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/team">Team</Link>
-            </li>
-            <li>
-              <Link to="/pricing">Pricing</Link>
-            </li>
-            <li>
-              <Link to="/journal">Journal</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <div className="start">
-            <div className="button">GET CERTIFICATE</div>
+            <div className="button">
+              <a className="fa-solid fa-phone" href="tel:+923363573763">
+                {" "}
+                &nbsp; &nbsp;Call Now
+              </a>
+            </div>
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>
             {click ? (
@@ -52,5 +45,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;
