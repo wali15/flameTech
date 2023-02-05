@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [Name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [Email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5173/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ to, subject, text }),
+      });
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <section className="contacts padding">
@@ -57,12 +79,27 @@ const Contact = () => {
               </div>
             </div>
 
-            <form action="">
+            <form handleSubmit={handleSubmit}>
               <div className="flexSB">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  value={Name}
+                  onChange={(e) => setTo(e.target.value)}
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={Email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
-              <input type="text" placeholder="Subject" />
+              <input
+                type="text"
+                placeholder="Subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              />
               <textarea cols="30" rows="10">
                 Create a message here...
               </textarea>
@@ -82,5 +119,4 @@ const Contact = () => {
     </>
   );
 };
-
 export default Contact;

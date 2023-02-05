@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contact from "./components/Contacts/Contact";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import About from "./components/About";
-import Home from "./components/Home";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import About from "./components/About.jsx";
+import Home from "./components/Home.jsx";
+import Contact from "./components/Contacts/Contact.jsx";
 
 const App = () => {
   return (
