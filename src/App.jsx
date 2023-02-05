@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import About from "./components/About.jsx";
 import Home from "./components/Home.jsx";
 import Contact from "./components/Contacts/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   return (
