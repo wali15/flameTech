@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
 import Contact from "./components/Contacts/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import About from "./components/About";
 import Home from "./components/Home";
 
 const App = () => {
