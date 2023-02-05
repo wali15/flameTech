@@ -2,9 +2,9 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
-import Contact from "./components/contacts/Contact";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
   return (
