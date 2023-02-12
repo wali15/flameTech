@@ -1,22 +1,22 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import About from "./components/About";
-// import Home from "./components/Home";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
+import Home from "./Components/Home/Home";
+import Contact from "./Components/Contact/Contact";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
+        <Header />
         <Routes>
-          {/* <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} /> */}
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );
