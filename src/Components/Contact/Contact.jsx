@@ -79,25 +79,25 @@ const Contact = () => {
               </div>
             </div>
 
-            <form handleSubmit={handleSubmit}>
+            <form>
               <div className="flexSB">
                 <input
                   type="text"
                   placeholder="Name"
-                  value={Name}
+                  // value={Name}
                   // onChange={(e) => setTo(e.target.value)}
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  value={Email}
+                  // value={Email}
                   // onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <input
                 type="text"
                 placeholder="Subject"
-                value={subject}
+                // value={subject}
                 // onChange={(e) => setSubject(e.target.value)}
               />
               <textarea cols="30" rows="10">
