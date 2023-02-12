@@ -26,12 +26,10 @@ const Header = () => {
             </li>
           </ul>
           <div className="start">
-            <div className="button">
-              <a className="fa-solid fa-phone" href="tel:+923363573763">
-                {" "}
-                &nbsp; &nbsp;Call Now
-              </a>
-            </div>
+            <a className="fa-solid fa-phone" href="tel:+923363573763">
+              {" "}
+              &nbsp; &nbsp;Call Now
+            </a>
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>
             {click ? (
@@ -45,4 +43,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;

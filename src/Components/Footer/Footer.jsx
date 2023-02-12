@@ -1,20 +1,18 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { blog } from "../../../dummydata";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <>
-      {/* <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
+      {/* <section className="newletter">
+        <div className="container flexSB">
+          <div className="left row">
             <h1>Newsletter - Stay tune and get the latest update</h1>
             <span>Far far away, behind the word mountains</span>
           </div>
-          <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+          <div className="right row">
+            <input type="text" placeholder="Enter email address" />
+            <i className="fa fa-paper-plane"></i>
           </div>
         </div>
       </section> */}
@@ -89,19 +87,22 @@ const Footer = () => {
             <ul>
               <li>
                 <a
-                  className="fa fa-map"
+                  className="fa fa-map icon"
                   href="https://goo.gl/maps/ZZ9dcY1sEdiqRfKh9"
                   target="_blank"
                 ></a>
                 B-677, PAF Road, Crossing, Korangi, Karachi.
               </li>
               <li>
-                <a className="fa fa-phone-alt" href="tel:+923363573763"></a>
+                <a
+                  className="fa fa-phone-alt icon"
+                  href="tel:+923363573763"
+                ></a>
                 +923363573763
               </li>
               <li>
                 <a
-                  className="fa fa-paper-plane"
+                  className="fa fa-paper-plane icon"
                   href="mailto: tflametech@gmail.com"
                   target="_blank"
                 ></a>

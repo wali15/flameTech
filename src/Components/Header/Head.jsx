@@ -9,6 +9,7 @@ const Head = () => {
             <h1>The Flame Tech</h1>
             <span>Liquefied petroleum gas (LPG) Company</span>
           </div>
+
           <div className="social">
             <i className="fab fa-facebook-f icon"></i>
             <i className="fab fa-instagram icon"></i>
